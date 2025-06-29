@@ -1,65 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/detailLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@color/colorBackground">
 
-    <TextView
-        android:id="@+id/skillName"
+    <LinearLayout
+        android:id="@+id/detailLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingBottom="16dp"
-        android:text="Název návyku"
-        android:textAlignment="center"
-        android:textSize="20sp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:outlineAmbientShadowColor="#FFFFFF"
-        android:outlineSpotShadowColor="#E0B6B6"
-        app:mcv_selectionColor="#00F"
-        app:mcv_showOtherDates="all" />
+        <TextView
+            android:id="@+id/skillName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            android:text="Název návyku"
+            android:textAlignment="center"
+            android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/deleteSkill"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#FF0101"
-        android:text="Smazat návyk"
-        android:textColor="#FFFFFF"
-        android:textColorLink="#D70101" />
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:outlineAmbientShadowColor="#FFFFFF"
+            android:outlineSpotShadowColor="#E0B6B6"
+            app:mcv_selectionColor="@color/colorAccent"
+            app:mcv_showOtherDates="all" />
 
-    <TimePicker
-        android:id="@+id/timePicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:timePickerMode="spinner" />
+        <Button
+            android:id="@+id/deleteSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FF0101"
+            android:text="Smazat návyk"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#D70101" />
 
-    <Switch
-        android:id="@+id/notificationSwitch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Denní notifikace"
-        android:textSize="16sp"
-        android:layout_marginTop="24dp"
-        android:layout_gravity="center_horizontal"
-        android:padding="8dp" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/nextNotificationInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="16dp"
-        android:text="Další upozornění přijde: —"
-        android:textSize="16sp" />
-
-</LinearLayout>
+</ScrollView>

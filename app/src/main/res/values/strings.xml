@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">zaverecka</string>
+    <string name="app_name">Habbit Tracker</string>
+    <string name="navigation_drawer_open">Otevřít menu</string>
+    <string name="navigation_drawer_close">Zavřít menu</string>
 </resources>

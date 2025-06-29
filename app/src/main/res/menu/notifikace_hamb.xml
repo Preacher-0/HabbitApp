@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+
+        <!-- Přepínač notifikací -->
+        <item
+            android:id="@+id/menu_toggle_notification"
+            android:title="Zap / Vyp Notifikací" />
+
+        <!-- Výběr času -->
+        <item
+            android:id="@+id/menu_pick_time"
+            android:title="Nastavit čas notifikace" />
+
+    </group>
+</menu>
